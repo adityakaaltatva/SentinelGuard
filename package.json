@@ -3,8 +3,14 @@
   "version": "1.0.0",
   "description": "SentinelGuard is a cloud-security detection and posture-monitoring system focused on practical, high-signal rules rather than academic noise. It inspects IAM configurations, storage permissions, container build files, supply-chain metadata, and IaC drift to expose vulnerabilities that actually get exploited in real environments. The system is built as a modular engine with a detection pipeline, enrichment layer, rule-runtime, and a clean deployment story through Helm charts.",
   "main": "index.js",
+  "type":"module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "prisma": "prisma"
   },
   "repository": {
     "type": "git",
@@ -13,9 +19,24 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/adityakaaltatva/SentinelGuard/issues"
   },
-  "homepage": "https://github.com/adityakaaltatva/SentinelGuard#readme"
+  "homepage": "https://github.com/adityakaaltatva/SentinelGuard#readme",
+  "dependencies": {
+    "@prisma/client": "^7.2.0",
+    "dotenv": "^17.2.3",
+    "fastify": "^5.6.2",
+    "pino": "^10.1.0",
+    "prisma": "^7.2.0",
+    "zod": "^4.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "eslint": "^9.39.2",
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.7.4",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
 }
