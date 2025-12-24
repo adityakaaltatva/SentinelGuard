@@ -1,0 +1,21 @@
+{
+  "name": "sentinelguard",
+  "version": "1.0.0",
+  "description": "SentinelGuard is a cloud-security detection and posture-monitoring system focused on practical, high-signal rules rather than academic noise. It inspects IAM configurations, storage permissions, container build files, supply-chain metadata, and IaC drift to expose vulnerabilities that actually get exploited in real environments. The system is built as a modular engine with a detection pipeline, enrichment layer, rule-runtime, and a clean deployment story through Helm charts.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adityakaaltatva/SentinelGuard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/adityakaaltatva/SentinelGuard/issues"
+  },
+  "homepage": "https://github.com/adityakaaltatva/SentinelGuard#readme"
+}
